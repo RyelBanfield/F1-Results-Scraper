@@ -2,40 +2,29 @@
 
 # F1-Results-Scraper
 
-> One paragraph statement about the project.
+> This scraper can take URLs from the Formula 1 page and return the results for any year that you choose.
 
 ![screenshot](./screenshot.png)
 
 Additional description about the project and its features.
 
-## Built With
-
-- ![Ruby](https://www.ruby-lang.org/en/)
-- ![nekogiri](https://github.com/sparklemotion/nokogiri)
-
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+- You need to have [Ruby](https://www.ruby-lang.org/en/) installed.
 
 ### Setup
-
-### Install
+- Download or clone this repo.
+- From your terminal `cd` into `F1-Results-Scraper` directory and run `bundle install`
 
 ### Usage
-
-### Run tests
-
-### Deployment
+- Finally`cd` into `F1-Results-Scraper/bin` and run `main.rb`
 
 ## Authors
 
-👤 **Author1**
+👤 **Ryel Banfield**
 
 - GitHub: [@RyelBanfield](https://github.com/RyelBanfield)
 - Twitter: [@RyelBanfield](https://twitter.com/RyelBanfield)
@@ -50,12 +39,6 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
