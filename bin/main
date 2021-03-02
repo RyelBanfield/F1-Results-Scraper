@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+require 'nokogiri'
+require 'httparty'
+require 'byebug'
+
+def scraper
+  url = 'https://www.formula1.com/en/results.html'
+  unparsed_page = HTTParty.get(url)
+  parsed_page = Nokogiri::HTML(unparsed_page)
+  races = []
+  race_results = parsed_page.css('tbody tr')
+  race_results.each do |race_result|
+    race = {
+      grand_prix: race_result.css('td')[1].text.strip,
+      date: race_result.css('td')[2].text,
+      winner: race_result.css('td')[3].text.strip.gsub(' ', '').gsub("\n", ' '),
+      car: race_result.css('td')[4].text,
+      laps: race_result.css('td')[5].text
+    }
+    races << race
+  end
+  byebug
+end
+
+scraper
