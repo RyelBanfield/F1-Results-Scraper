@@ -7,3 +7,6 @@ puts
 scraper = Scraper.new(url)
 scraper.scrape_data
 scraper.results_output
+
+# THIS IS THE WEBSITE TO BE USED.
+# https://www.formula1.com/en/results.html
