@@ -13,7 +13,6 @@ class Scraper
   end
 
   def scrape_data
-    # url = 'https://www.formula1.com/en/results.html'
     unparsed_page = HTTParty.get(url)
     parsed_page = Nokogiri::HTML(unparsed_page.body)
     @race_season = parsed_page.css('.ResultsArchiveTitle').text.strip
