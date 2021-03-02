@@ -20,8 +20,9 @@ To get a local copy up and running follow these simple steps.
 - From your terminal `cd` into `F1-Results-Scraper` directory and run `bundle install`
 
 ### Usage
-- Finally`cd` into `F1-Results-Scraper/bin` and run `main.rb`
-
+- To run `cd` into `F1-Results-Scraper/bin` and run `main.rb`
+- Select a [Race Year](https://www.formula1.com/en/results.html) and enter the link when prompted.
+- You will get all the race results for that year returned.
 ## Authors
 
 👤 **Ryel Banfield**
