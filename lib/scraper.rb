@@ -1,6 +1,7 @@
-require 'nokogiri'
-require 'httparty'
 require 'byebug'
+require 'colorize'
+require 'httparty'
+require 'nokogiri'
 
 class Scraper
   attr_accessor :url, :race_season
@@ -30,7 +31,7 @@ class Scraper
   end
 
   def results_output
-    puts "THESE ARE THE #{race_season}"
+    puts "THESE ARE THE #{race_season}".red
     puts
     @races.each do |race|
       puts "Grand Prix: #{race[:grand_prix]}
