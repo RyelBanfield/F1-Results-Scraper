@@ -6,9 +6,10 @@ require 'byebug'
 def scraper
   url = 'https://www.formula1.com/en/results.html'
   unparsed_page = HTTParty.get(url)
-  parsed_page = Nokogiri::HTML(unparsed_page)
-  races = []
+  parsed_page = Nokogiri::HTML(unparsed_page.body)
+  race_season = parsed_page.css('.ResultsArchiveTitle').text.strip
   race_results = parsed_page.css('tbody tr')
+  races = []
   race_results.each do |race_result|
     race = {
       grand_prix: race_result.css('td')[1].text.strip,
@@ -19,7 +20,16 @@ def scraper
     }
     races << race
   end
-  byebug
+  puts "THESE ARE THE #{race_season}"
+  puts
+  races.each do |race|
+    puts "Grand Prix: #{race[:grand_prix]}
+    Date: #{race[:date]}
+    Winner: #{race[:winner]}
+    Car: #{race[:car]}
+    Laps: #{race[:laps]}"
+    puts
+  end
 end
 
 scraper
