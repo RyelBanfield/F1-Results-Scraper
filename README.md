@@ -2,7 +2,7 @@
 
 # F1-Results-Scraper
 
-> This scraper can take URLs from the Formula 1 page and return the results for any year that you choose.
+> This scraper returns the race results for any Formula 1 season that you choose.
 
 ![screenshot](./screenshot.png)
 
@@ -17,12 +17,11 @@ To get a local copy up and running follow these simple steps.
 
 ### Setup
 - Download or clone this repo.
-- From your terminal `cd` into `F1-Results-Scraper` directory and run `bundle install`
+- From your terminal, `cd` into the `F1-Results-Scraper` directory and run `bundle install`
 
 ### Usage
-- To run `cd` into `F1-Results-Scraper/bin` and run `main.rb`
-- Select a [Race Year](https://www.formula1.com/en/results.html) and enter the link when prompted.
-- You will get all the race results for that year returned.
+- To run, `cd` into `F1-Results-Scraper/bin` and run `main.rb`
+- Enter a year to get the Formula 1 race results of that season.
 ## Authors
 
 👤 **Ryel Banfield**

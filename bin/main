@@ -1,12 +1,10 @@
 #!/usr/bin/env ruby
 require_relative '../lib/scraper'
 puts
-puts 'Please enter the link for the season results you want: '
-url = gets.chomp
+puts 'Please enter the year of the race results you want: '
+year = gets.chomp
+url = "https://www.formula1.com/en/results.html/#{year}/races.html"
 puts
 scraper = Scraper.new(url)
 scraper.scrape_data
 scraper.results_output
-
-# THIS IS THE WEBSITE TO BE USED.
-# https://www.formula1.com/en/results.html
