@@ -7,4 +7,5 @@ url = "https://www.formula1.com/en/results.html/#{year}/races.html"
 puts
 scraper = Scraper.new(url)
 scraper.scrape_data
-scraper.results_output
+scraper.results
+scraper.summary
