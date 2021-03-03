@@ -30,6 +30,9 @@ class Scraper
   end
 
   def results_output
+    # driver_wins = []
+    # car_wins = []
+    total_laps = 0
     puts "THESE ARE THE #{race_season}".red
     puts
     @races.each do |race|
@@ -39,6 +42,9 @@ class Scraper
       Car: #{race[:car]}
       Laps: #{race[:laps]}"
       puts
+      total_laps += race[:laps].to_i
     end
+    puts "Total laps raced this year: #{total_laps}"
+    puts
   end
 end
