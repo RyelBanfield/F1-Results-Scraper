@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require_relative '../lib/scraper'
+puts
+puts 'Please enter the year of the race results you want: '
+year = gets.chomp
+url = "https://www.formula1.com/en/results.html/#{year}/races.html"
+puts
+scraper = Scraper.new(url)
+scraper.scrape_data
+scraper.results
+scraper.summary

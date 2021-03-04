@@ -1,61 +1,51 @@
+[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # F1-Results-Scraper
 
-> One paragraph statement about the project.
+> This scraper returns the race results for any Formula 1 season that you choose.
 
 ![screenshot](./screenshot.png)
+![screenshot](./screenshot-two.png)
 
 Additional description about the project and its features.
 
 ## Built With
-
-- ![Ruby](https://www.ruby-lang.org/en/)
-- ![nekogiri](https://github.com/sparklemotion/nokogiri)
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Byebug](https://github.com/deivid-rodriguez/byebug)
+- [Colorize](https://github.com/fazibear/colorize)
+- [Httparty](https://github.com/jnunemaker/httparty)
+- [Nokogiri](https://nokogiri.org/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+- You need to have [Ruby](https://www.ruby-lang.org/en/) installed.
 
 ### Setup
 
-### Install
+- Download or clone this repo.
+- From your terminal, `cd` into the `F1-Results-Scraper` directory and run `bundle install`
 
 ### Usage
 
-### Run tests
-
-### Deployment
+- To run, `cd` into `F1-Results-Scraper/bin` and run `main.rb`
+- Enter a year to get the Formula 1 race results of that season.
 
 ## Authors
 
-👤 **Author1**
+👤 **Ryel Banfield**
 
 - GitHub: [@RyelBanfield](https://github.com/RyelBanfield)
 - Twitter: [@RyelBanfield](https://twitter.com/RyelBanfield)
 - LinkedIn: [RyelBanfield](https://www.linkedin.com/in/ryel-banfield/)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
