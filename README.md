@@ -7,6 +7,7 @@
 > This scraper returns the race results for any Formula 1 season that you choose.
 
 ![screenshot](./screenshot.png)
+![screenshot](./screenshot-two.png)
 
 Additional description about the project and its features.
 
